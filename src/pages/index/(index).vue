@@ -21,6 +21,7 @@
       <DashboardFilters
         v-model="filters"
         class="q-mb-lg"
+        @update:model-value="applyFilters"
       />
 
       <q-banner v-if="store.error" rounded class="bg-red-1 text-negative q-mb-lg">
