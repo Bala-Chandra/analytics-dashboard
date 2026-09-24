@@ -36,6 +36,13 @@ declare module 'vue-router/auto-routes' {
       '/',
       Record<never, never>,
       Record<never, never>,
+      | '//(index)'
+    >,
+    '//(index)': RouteRecordInfo<
+      '//(index)',
+      '/',
+      Record<never, never>,
+      Record<never, never>,
       | never
     >,
     '/[...path]': RouteRecordInfo<
@@ -68,6 +75,15 @@ declare module 'vue-router/auto-routes' {
     'src/pages/index.vue': {
       routes:
         | '/'
+        | '//(index)'
+      views:
+        | 'default'
+      pathParamNames:
+        | never
+    }
+    'src/pages/index/(index).vue': {
+      routes:
+        | '//(index)'
       views:
         | never
       pathParamNames:
