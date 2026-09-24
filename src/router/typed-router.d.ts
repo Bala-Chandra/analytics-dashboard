@@ -52,13 +52,6 @@ declare module 'vue-router/auto-routes' {
       { path: ParamValue<false> },
       | never
     >,
-    '/DashboardPage': RouteRecordInfo<
-      '/DashboardPage',
-      '/DashboardPage',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
   }
 
   /**
@@ -96,14 +89,6 @@ declare module 'vue-router/auto-routes' {
         | never
       pathParamNames:
         | 'path'
-    }
-    'src/pages/DashboardPage.vue': {
-      routes:
-        | '/DashboardPage'
-      views:
-        | never
-      pathParamNames:
-        | never
     }
   }
 
